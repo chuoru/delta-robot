@@ -1,5 +1,6 @@
 
-# Delta robot gazebo simulation
+# Delta Robot
+A gazebo simulation for delta robot
 
 ## Install docker 
 https://docs.docker.com/engine/install/ubuntu/
