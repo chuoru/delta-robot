@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+  ros-master:
+    image: ros:noetic-ros-core
+    container_name: ros-master
+    command: stdbuf -o L roscore
+    ports:
+      - "11311:11311"
+    network_mode: host
+
+
+  delta_gazebo:
+    user: root
+    image: delta_gazebo:latest
+    container_name: delta-gazebo
+    volumes: 
+      - "/tmp/.X11-unix:/tmp/.X11-unix:rw"
+      - "/tmp/.docker.xauth:/tmp/.docker.xauth"
+      - ./delta_description:/root/catkin_ws/src/delta_description
+      - ./delta_gazebo:/root/catkin_ws/src/delta_gazebo
+      - ./scart_description:/root/catkin_ws/src/scart_description
+    privileged: True
+    network_mode: host
+    environment:
+      - "DISPLAY=$DISPLAY"
+      - "XAUTHORITY=/tmp/.docker.xauth"
+      - "QT_X11_NO_MITSHM=1"
+    entrypoint:
+      - bash
+      - -c 
+    command: >
+       "source /opt/ros/noetic/setup.bash && 
+        source /root/catkin_ws/devel/setup.bash &&
+        sleep 1 &&
+        # Scart Q4
+       roslaunch delta_gazebo delta_gazebo.launch"
