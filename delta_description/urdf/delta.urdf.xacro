@@ -45,7 +45,7 @@
       <material>
         <script>
           <uri>file://media/materials/scripts/gazebo.material</uri>
-          <name>Gazebo/Red</name>
+          <name>Gazebo/White</name>
         </script>
       </material>
     </visual>
@@ -55,7 +55,7 @@
       <material>
         <script>
           <uri>file://media/materials/scripts/gazebo.material</uri>
-          <name>Gazebo/Black</name>
+          <name>Gazebo/White</name>
         </script>
       </material>
     </visual>
@@ -65,7 +65,7 @@
       <material>
         <script>
           <uri>file://media/materials/scripts/gazebo.material</uri>
-          <name>Gazebo/Red</name>
+          <name>Gazebo/White</name>
         </script>
       </material>
     </visual>
@@ -75,7 +75,7 @@
       <material>
         <script>
           <uri>file://media/materials/scripts/gazebo.material</uri>
-          <name>Gazebo/Red</name>
+          <name>Gazebo/White</name>
         </script>
       </material>
     </visual>
@@ -85,7 +85,7 @@
       <material>
         <script>
           <uri>file://media/materials/scripts/gazebo.material</uri>
-          <name>Gazebo/Red</name>
+          <name>Gazebo/White</name>
         </script>
       </material>
     </visual>

@@ -1,13 +1,13 @@
 version: "3"
 
 services:
-  ros-master:
-    image: ros:noetic-ros-core
-    container_name: ros-master
-    command: stdbuf -o L roscore
-    ports:
-      - "11311:11311"
-    network_mode: host
+  # ros-master:
+  #   image: ros:noetic-ros-core
+  #   container_name: ros-master
+  #   command: stdbuf -o L roscore
+  #   ports:
+  #     - "11311:11311"
+  #   network_mode: host
 
 
   delta_gazebo:
