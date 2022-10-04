@@ -2,6 +2,20 @@
 # Delta Robot
 A gazebo simulation for delta robot
 
+## Build 
+```
+mkdir delta_ws
+cd delta_ws
+cd src/
+git clone https://github.com/chuoru/delta-robot
+cd ../
+catkin_make
+```
+Run gazebo
+```
+roslaunch delta_gazebo delta_gazebo.launch
+```
+
 ## Install docker 
 https://docs.docker.com/engine/install/ubuntu/
 
